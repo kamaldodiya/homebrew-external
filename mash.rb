@@ -10,7 +10,7 @@ class Mash < Formula
   sha256 "7bea8cd3c266640bbd97f2e1c9d0168892915c1c14f7d03a9751bf7a3709dd01"
   head "https://github.com/marbl/Mash.git"
 
-  needs :cxx11
+  # needs :cxx11
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build

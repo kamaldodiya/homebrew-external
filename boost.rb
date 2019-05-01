@@ -33,7 +33,7 @@ class Boost < Formula
   #   cause "Dropped arguments to functions when linking with boost"
   # end
 
-  needs :cxx11 
+  # needs :cxx11 
 
   def install
     # Reduce memory usage below 4 GB for Circle CI.
