@@ -24,7 +24,7 @@ class Kent < Formula
   if build.with? "connector-c"
     depends_on "mysql-connector-c"
   else
-    depends_on "ensembl/external/percona-client"
+    depends_on "kamaldodiya/external/percona-client"
   end
   
   depends_on "libpng"
@@ -52,7 +52,7 @@ class Kent < Formula
     if build.with? "connector-c"
       mysql = Formula["mysql-connector-c"]
     else
-      mysql = Formula["ensembl/external/percona-client"]
+      mysql = Formula["kamaldodiya/external/percona-client"]
     end
     openssl = Formula["openssl"]
 

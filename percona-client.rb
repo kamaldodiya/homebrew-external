@@ -27,7 +27,7 @@ class PerconaClient < Formula
     :because => "both install MySQL client libraries"
   conflicts_with "mariadb-connector-c",
     :because => "both install plugins"
-    conflicts_with "ensembl/external/mysql-client",
+    conflicts_with "kamaldodiya/external/mysql-client",
     :because => "both install the same client libraries"
 
   # Where the database files should be located. Existing installs have them
