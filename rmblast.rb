@@ -17,7 +17,7 @@ class Rmblast < Formula
   end
   revision 1
 
-  depends_on "ensembl/external/blast" => :recommended
+  depends_on "kamaldodiya/external/blast" => :recommended
 
   def install
     prefix.install Dir["*"]

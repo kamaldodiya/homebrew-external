@@ -13,10 +13,10 @@ class Repeatmasker < Formula
   option "without-cache", "Do not change the cache directory to use REPEATMASKER_CACHE instead of HOME"
   option "with-dfam", "Use Hmmer and Dfam to mask sequences"
 
-  depends_on "ensembl/external/hmmer" # at least version 3.1 for nhmmer
+  depends_on "kamaldodiya/external/hmmer" # at least version 3.1 for nhmmer
   depends_on "perl" => :optional
-  depends_on "ensembl/external/rmblast"
-  depends_on "ensembl/external/trf"
+  depends_on "kamaldodiya/external/rmblast"
+  depends_on "kamaldodiya/external/trf"
   depends_on "ensembl/moonshine/phrap" => :recommended
   depends_on "ensembl/moonshine/repbase" => :recommended
 
@@ -64,7 +64,7 @@ class Repeatmasker < Formula
           File.delete("#{libexec}/Libraries/RepeatMaskerLib.embl")
         end
       end
-      if Formula['ensembl/external/rmblast'].installed?
+      if Formula['kamaldodiya/external/rmblast'].installed?
         f.puts(2)
         f.puts("#{HOMEBREW_PREFIX}/bin")
         if default_is_set
@@ -74,7 +74,7 @@ class Repeatmasker < Formula
           default_is_set = true
         end
       end
-      if Formula['ensembl/external/hmmer'].installed?
+      if Formula['kamaldodiya/external/hmmer'].installed?
         f.puts(4)
         f.puts("#{HOMEBREW_PREFIX}/bin")
         if default_is_set
@@ -114,7 +114,7 @@ class Repeatmasker < Formula
     Congratulations!  RepeatMasker is now ready to use.
     If something went wrong you can reconfigure RepeatMasker
     with:
-      brew postinstall ensembl/external/repeatmasker
+      brew postinstall kamaldodiya/external/repeatmasker
       or
       cd #{libexec} && ./configure
 
